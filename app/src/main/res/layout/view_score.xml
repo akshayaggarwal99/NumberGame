@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/tv_view_score_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <Spinner
+                    android:id="@+id/spinner_type_select"
+                    android:layout_height="wrap_content"
+                    android:background="#E6E6FC"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:id="@+id/spinner_mode_select"
+                    android:layout_height="wrap_content"
+                    android:background="#97C024"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_graph_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/tv_view_score_spinner"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_view_score_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_graph_view"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Short Summary"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_view_score_text"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_analysis_30"
+                    android:gravity="center_horizontal"
+                    android:text="Analysis"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_31"
+                    android:gravity="center_horizontal"
+                    android:text="Your Data"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_32"
+                    android:gravity="center_horizontal"
+                    android:text="Global data"
+                    android:textColor="#FFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_analysis_1"
+                    android:gravity="center_horizontal"
+                    android:text="Type"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_2"
+                    android:gravity="center_horizontal"
+                    android:text="Addition Subtraction"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_3"
+                    android:gravity="center_horizontal"
+                    android:text="Addition Subtraction"
+                    android:textColor="#FFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_analysis_4"
+                    android:gravity="center_horizontal"
+                    android:text="Mode"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_5"
+                    android:gravity="center_horizontal"
+                    android:text="Easy"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_6"
+                    android:gravity="center_horizontal"
+                    android:text="Easy"
+                    android:textColor="#FFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_analysis_7"
+                    android:gravity="center_horizontal"
+                    android:text="Average time (s)"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_8"
+                    android:gravity="center_horizontal"
+                    android:text="3.801"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_9"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="#FFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_analysis_10"
+                    android:gravity="center_horizontal"
+                    android:text="Min time (s)"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_11"
+                    android:gravity="center_horizontal"
+                    android:text="3.801"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_12"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="#FFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_analysis_13"
+                    android:gravity="center_horizontal"
+                    android:text="Max time (s)"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_14"
+                    android:gravity="center_horizontal"
+                    android:text="3.801"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_15"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="#FFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_analysis_19"
+                    android:gravity="center_horizontal"
+                    android:text="Played"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_20"
+                    android:gravity="center_horizontal"
+                    android:text="3 times"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_21"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="#FFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/b_show_help"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_launcher" />
+
+                <ImageButton
+                    android:id="@+id/b_go_home"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_launcher" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</ScrollView>

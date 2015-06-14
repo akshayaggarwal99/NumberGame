@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="80dp" >
+
+            <TextView
+                android:id="@+id/tv_we_have_launched_new_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="We have launched a new app recently !!"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_loading_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_we_have_launched_new_app"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Loading Image ..."
+                android:textColor="#F00"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/ib_new_app_icon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/tv_loading_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_new_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ib_new_app_icon"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="HR interview Questions"
+                android:textColor="#FF05700a"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/tv_new_app_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_new_app_name"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Get the best interview questions"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/b_get_for_free"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0A8AED"
+        android:padding="12dp"
+        android:text="Get it for free"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</RelativeLayout>

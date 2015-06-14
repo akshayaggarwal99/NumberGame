@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_madguy_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/new_madguy_icon" />
+
+        <TextView
+            android:id="@+id/tv_madguy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_madguy_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="MadGuy Soft Labs"
+            android:textSize="25sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tv_madguy_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_madguy_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="India"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:id="@+id/rl_social_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_madguy_address"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/fb_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:src="@drawable/fb_icon" />
+
+            <ImageButton
+                android:id="@+id/you_tube_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:src="@drawable/you_tube_icon" />
+
+            <ImageButton
+                android:id="@+id/send_an_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:src="@drawable/email_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/madguy_about_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_social_icons"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ABOUT US"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/madguy_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/madguy_about_heading"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="We are a team of passionate professionals, spread over the globe, aiming to make learning more fun."
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/madguy_contact_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/madguy_about_us"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="CONTACT US"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/madguy_contact_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/madguy_contact_heading"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="info@madguylab.com"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</ScrollView>

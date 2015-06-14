@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/tv_starter_type_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Addition and Subtraction"
+        android:textColor="@color/accentColor"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_starter_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_starter_type_name"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Easy Mode"
+        android:textColor="@color/accentColor"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_starter_question_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_starter_mode"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="15 Questions"
+        android:textColor="@color/accentColor"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/tv_starter_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_starter_question_limit"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Tip: Use this app atleast Once in a day to enhance your calculation speed !!"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_starter_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="3"
+        android:textColor="#F00"
+        android:textSize="120dp" />
+
+</RelativeLayout>

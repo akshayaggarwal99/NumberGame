@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_think_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="The Think Tank"
+            android:textColor="@color/accentColor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_think_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_think_text"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Incorrect"
+            android:textColor="#F00"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tv_think_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_think_result"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Try exercise your mental arithmetic each day !"
+            android:textColor="@color/accentColor"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/think_tannk_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/tv_think_help"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</ScrollView>

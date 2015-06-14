@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white" >
+
+    <LinearLayout
+        android:id="@+id/ll_adview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tl_game_current_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp" >
+
+            <TextView
+                android:id="@+id/tv_game_play_question"
+                android:gravity="center_horizontal"
+                android:text="1/10"
+                android:textColor="#000"
+                android:textSize="30dp" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_think_tank_custom_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ProgressBar
+            android:id="@+id/pb_think_tank_wait_time"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/new_circular_progressbar" />
+
+        <TextView
+            android:id="@+id/tv_think_tank_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="Start with"
+            android:textColor="@color/accentColor"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_think_tank_digit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_think_tank_text"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="8"
+            android:textColor="@color/primaryColor"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/b_think_tank_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_think_tank_wait_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/button_shape_small"
+            android:text="OK"
+            android:textColor="#FFF"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

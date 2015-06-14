@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white">
+
+    <TextView
+        android:id="@+id/tv_number_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Select a Mode"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_number_game"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:padding="10dp"
+        android:background="@color/primaryColor"
+        android:verticalSpacing="20dp" />
+    <at.markushi.ui.CircleButton
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:src="@drawable/ic_action_star"
+        app:cb_color="#99CC00"
+        app:cb_pressedRingWidth="8dip"
+        android:layout_below="@+id/grid_view"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

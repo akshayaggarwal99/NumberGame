@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:fillViewport="true"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_text_wrong_attampt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Wrong Attempts"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_value_wrong_attampt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text_wrong_attampt"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="#FFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_text_time_penalty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_value_wrong_attampt"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Time Penalty"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_value_time_penalty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text_time_penalty"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="None"
+            android:textColor="#FFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_text_your_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_value_time_penalty"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Your Time"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_value_your_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text_your_time"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="37.087 s"
+            android:textColor="#FFF"
+            android:textSize="35dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_graph_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/tv_value_your_time"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

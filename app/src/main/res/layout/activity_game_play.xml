@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E0" >
+
+    <LinearLayout
+        android:id="@+id/ll_adview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tl_game_current_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_game_play_mode"
+                android:gravity="center_horizontal"
+                android:text="Easy"
+                android:background="#CCC"
+                android:textColor="#FFEA00" />
+
+            <TextView
+                android:id="@+id/tv_game_play_question"
+                android:gravity="center_horizontal"
+                android:text="1/15"
+                android:background="#CCC"
+                android:textColor="#FFEA00" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_game_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_game_current_question"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="5-3"
+        android:background="@drawable/inputbox"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_game_result_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_game_question"
+        android:layout_margin="20dp"
+        android:background="@drawable/inputbox"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/primaryColor"
+        android:textSize="30dp" />
+
+    <TableLayout
+        android:id="@+id/tl_game_input_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_adview"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_1"
+                android:background="@drawable/button_shape"
+                android:text="1"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button_2"
+                android:background="@drawable/button_shape"
+                android:text="2"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button_3"
+                android:background="@drawable/button_shape"
+                android:text="3"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_4"
+                android:background="@drawable/button_shape"
+                android:text="4"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button_5"
+                android:background="@drawable/button_shape"
+                android:text="5"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button_6"
+                android:background="@drawable/button_shape"
+                android:text="6"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_7"
+                android:background="@drawable/button_shape"
+                android:text="7"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button_8"
+                android:background="@drawable/button_shape"
+                android:text="8"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button_9"
+                android:background="@drawable/button_shape"
+                android:text="9"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_clear"
+                android:background="@drawable/button_shape"
+                android:text="Cl"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button_0"
+                android:background="@drawable/button_shape"
+                android:text="0"
+                android:textColor="#FFF" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
