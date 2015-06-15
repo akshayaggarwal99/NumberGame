@@ -34,6 +34,8 @@ import android.widget.TextView;
 
 import com.aka.numbergame.helper.AppRater;
 import com.aka.numbergame.helper.MainPageCustomAdapter;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ScrollDirectionListener;
 
@@ -81,9 +83,7 @@ public class MainActivity extends ActionBarActivity {
 
 		setContentView(R.layout.activity_main);
 
-		ImageView splash=(ImageView)findViewById(R.id.splash_think_tank);
-		Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(this, R.anim.hyperspace_jump);
-		splash.startAnimation(hyperspaceJumpAnimation);
+
 
 
 
@@ -268,8 +268,10 @@ public class MainActivity extends ActionBarActivity {
 		topic_data.add(map);
 
 		listView = (ListView) findViewById(R.id.list);
+
 		FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 		fab.attachToListView(listView);
+		YoYo.with(Techniques.RollIn).duration(2000).playOn(listView);
 
 		list_adapter = new MainPageCustomAdapter(this, topic_data);
 		listView.setAdapter(list_adapter);

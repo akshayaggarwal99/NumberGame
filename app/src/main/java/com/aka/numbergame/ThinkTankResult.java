@@ -1,5 +1,7 @@
 package com.aka.numbergame;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -68,6 +70,7 @@ public class ThinkTankResult extends Activity {
 		}
 
 		status = (TextView) findViewById(R.id.tv_think_result);
+		YoYo.with(Techniques.Tada).duration(2000).playOn(status);
 
 		wrong_answer_number = getIntent().getExtras().getInt("wrong_ans");
 		context = this;

@@ -14,6 +14,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 import com.aka.numbergame.helper.CustomAdapterModeSelect;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 
 public class GameModeSelect extends Activity {
 	private String type_new = "";
@@ -33,6 +35,7 @@ public class GameModeSelect extends Activity {
 		CustomAdapterModeSelect adapter = new CustomAdapterModeSelect(this,
 				getData());
 		gridView.setAdapter(adapter);
+		YoYo.with(Techniques.BounceIn).duration(2000).playOn(gridView);
 
 		gridView.setOnItemClickListener(new OnItemClickListener() {
 			@SuppressLint("ShowToast")

@@ -37,6 +37,8 @@ import android.view.Display;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
 import com.jjoe64.graphview.GraphViewSeries;
@@ -80,6 +82,7 @@ public class GamePlayResult extends Activity {
 		your_time_value = (TextView) findViewById(R.id.tv_value_your_time);
 		// view_score = (ImageButton) findViewById(R.id.button_viewscores);
 		// go_home = (ImageButton) findViewById(R.id.button_home);
+		YoYo.with(Techniques.RollIn).duration(2500).playOn(wrong_attampt_value);
 
 		int width = 0;
 		int height = 0;

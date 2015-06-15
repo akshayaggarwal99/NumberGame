@@ -1,5 +1,7 @@
 package com.aka.numbergame;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -16,6 +18,8 @@ import android.view.Display;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 public class NumberGameSplash extends Activity {
@@ -31,6 +35,9 @@ public class NumberGameSplash extends Activity {
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_number_game_splash);
+
+//		Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(this, R.anim.hyperspace_jump);
+//		splash.startAnimation(hyperspaceJumpAnimation)
 
 		interstitial = new InterstitialAd(this);
 		interstitial.setAdUnitId(getResources().getString(
@@ -51,10 +58,20 @@ public class NumberGameSplash extends Activity {
 		});
 
 		ImageView math_expert = (ImageView) findViewById(R.id.splash_math_expert);
-		ImageView single_player = (ImageView) findViewById(R.id.splash_single_player);
+		final ImageView single_player = (ImageView) findViewById(R.id.splash_single_player);
 		ImageView multi_player = (ImageView) findViewById(R.id.splash_multi_player);
 		ImageView math_tricks = (ImageView) findViewById(R.id.splash_math_tricks);
 		ImageView think_tank = (ImageView) findViewById(R.id.splash_think_tank);
+
+		YoYo.with(Techniques.SlideInLeft).duration(3000).playOn(math_expert);
+		YoYo.with(Techniques.SlideInRight).duration(3000).playOn(single_player);
+		YoYo.with(Techniques.Pulse).duration(3000).playOn(multi_player);
+		YoYo.with(Techniques.ZoomIn).duration(3000).playOn(think_tank);
+
+
+
+
+
 
 		int width = 0;
 		int height = 0;
